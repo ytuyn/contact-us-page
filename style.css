@@ -1,0 +1,123 @@
+/* إعدادات الخط والخلفية */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(180deg, #0f172a 0%, #1e3a8a 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* يبدأ من الأعلى */
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    padding-top: 40px; /* مسافة جمالية من الأعلى */
+}
+
+/* الحاوية الرئيسية */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; /* التحكم الموحد في المسافات بين كل العناصر */
+    width: 90%;
+    max-width: 400px;
+}
+
+/* منطقة الشعار */
+.logo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px; /* تقليل المسافة تحت منطقة الشعار */
+}
+
+.logo-circle {
+    height: 120px; /* يمكنك زيادة الحجم أو تصغيره حسب رغبتك */
+    width: 120px;
+    background-color: transparent; /* غيرناه من أبيض إلى شفاف */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* هذا السطر هو الأهم لقص حواف الصورة لتصبح دائرية */
+     /* إذا كنتِ تريدين إطاراً أبيض حول الصورة */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.logo-circle img {
+    width: 200%; /* تجعل الصورة تأخذ كامل عرض الدائرة */
+    height: 200%; /* تجعل الصورة تأخذ كامل طول الدائرة */
+    object-fit: cover; /* يمنع تشوه الصورة ويجعلها تملأ الدائرة بامتلاء */
+}
+
+/* عنوان Programming */
+h1 {
+    font-size: 26px;
+    margin: 10px 0 15px 0; /* تم تصفير المسافات الزائدة */
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* تنسيق الأزرار */
+.link-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
+    padding: 14px 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 8px 15px rgba(22, 22, 22, 0.921);
+}
+
+/* تأثير عند مرور الماوس */
+.link-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #60a5fa; /* لون أزرق فاتح */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* النقاط الثلاث الجانبية */
+.dots {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    opacity: 0.6;
+}
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* المسافة بين الأيقونتين */
+    margin-bottom: 30px; /* المسافة بين الأيقونات والأزرار اللي تحتها */
+}
+
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* تأثير عند مرور الماوس على الواتساب */
+.icon-box.whatsapp:hover {
+    transform: scale(1.2);
+
+}
+
+/* تأثير عند مرور الماوس على الإيميل */
+.icon-box.email:hover {
+    transform: scale(1.2);
+}
