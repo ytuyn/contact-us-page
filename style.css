@@ -167,4 +167,15 @@ body { font-family: 'Arial', sans-serif; direction: rtl; }
     box-shadow: none;
     background: #f9f9f9;
   }
+
+  .search input {
+    border-radius: 5px !important; /* لتوحيد الحواف من كل الجهات في الجوال */
+    margin-bottom: 5px;
 }
+
+.menu2 {
+    gap: 25px; /* مسافة مريحة للعين وللضغط بالإصبع */
+    margin-bottom: 20px;
+}
+}
+
